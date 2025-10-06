@@ -35,6 +35,39 @@
     .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
     ul{margin:6px 0 0;padding-left:18px;color:#334155}
     .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .language-toggle {
+  background-color: #f8fafc;     
+  color: #0f172a;                   
+  border: 1px solid #e2e8f0;       
+  border-radius: 8px;          
+  padding: 6px 14px;               
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;       
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+  text-decoration: none;
+}
+
+.language-toggle:hover {
+  background-color: #e0f2fe;        
+  border-color: #38bdf8;
+  color: #0369a1;
+  transform: translateY(-1px);      
+  box-shadow: 0 4px 8px rgba(56, 189, 248, 0.2);
+}
+
+.language-toggle:active {
+  transform: translateY(0);        
+  box-shadow: 0 2px 4px rgba(56, 189, 248, 0.2);
+}
+
+.language-toggle:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
     @media(max-width:720px){.two-col{grid-template-columns:1fr}.contact{text-align:left}}
     .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:#eef2ff;color:#3730a3;font-weight:600;font-size:13px}
     footer{padding:16px;background:#fafafa;border-top:1px solid #f1f5f9;text-align:center;color:var(--muted);font-size:13px}
@@ -53,6 +86,9 @@
       <div class="contact">
         <div><strong>Email:</strong> thai2bake@20157@gmail.com</div>
         <div><strong>Phone:</strong> 0985 534 542</div>
+         <div>
+          <a href="index.html" class="language-toggle">Vietnamese</a>
+        </div>
       </div>
     </div>
 
