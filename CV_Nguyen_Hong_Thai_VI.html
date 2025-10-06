@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CV - Nguyễn Hồng Thại</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --primary:#0b74de;
+      --muted:#6b7280;
+      --accent:#eef6ff;
+      --radius:12px;
+      --maxw:800px;
+      --pad:22px;
+      --heading-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --body-font: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{font-family:var(--body-font);background:var(--bg);margin:0;padding:40px;display:flex;justify-content:center}
+    .card{width:100%;max-width:var(--maxw);background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(11,20,40,0.08);overflow:hidden}
+    .header{display:flex;gap:20px;padding:var(--pad);align-items:center;background:linear-gradient(90deg, rgba(11,116,222,0.06), rgba(11,116,222,0.02));}
+    .avatar{width:96px;height:126px;border-radius:12px;background:linear-gradient(180deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-weight:700;color:#08306b}
+    .name{flex:1}
+    .name h1{margin:0;font-size:20px;color:#07173a;font-family:var(--heading-font)}
+    .name p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .contact{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;text-align:right}
+    .section{padding:22px;border-top:1px solid #f1f5f9}
+    .section h2{margin:0 0 10px;font-size:15px;color:#07173a}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--accent);padding:8px 10px;border-radius:999px;font-size:13px;color:#044e9a}
+    .project{margin-bottom:12px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    ul{margin:6px 0 0;padding-left:18px;color:#334155}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media(max-width:720px){.two-col{grid-template-columns:1fr}.contact{text-align:left}}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:#eef2ff;color:#3730a3;font-weight:600;font-size:13px}
+    footer{padding:16px;background:#fafafa;border-top:1px solid #f1f5f9;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="card" role="article" aria-label="CV Nguyễn Hồng Thại">
+    <div class="header">
+      <div >
+        <img class="avatar" src="avatar.png" alt="">
+      </div>
+      <div class="name">
+        <h1>Nguyễn Hồng Thại</h1>
+        <p>Frontend Developer (Sinh viên năm nhất)</p>
+      </div>
+      <div class="contact">
+        <div><strong>Email:</strong> thai2bake@20157@gmail.com</div>
+        <div><strong>Phone:</strong> 0985 534 542</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Giới thiệu</h2>
+      <p>Sinh viên năm nhất đam mê lập trình web, đặc biệt là ReactJS. Tôi yêu thích việc xây dựng giao diện thân thiện và trực quan, luôn cố gắng học hỏi công nghệ mới để nâng cao kỹ năng Frontend và phát triển theo hướng chuyên nghiệp.</p>
+    </div>
+
+    <div class="section two-col">
+      <div>
+        <h2>Kỹ năng</h2>
+        <div class="skills">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">ReactJS</span>
+          <span class="chip">Laravel</span>
+          <span class="chip">Git</span>
+        </div>
+
+        <h2 style="margin-top:16px">Học vấn</h2>
+        <div class="meta">Trung tâm đào tạo lập trình viên Aptech — Chuyên ngành CNTT</div>
+        <div class="meta">Thành tích: 84/100 điểm (Học kỳ I)</div>
+      </div>
+
+      <div>
+        <h2>Dự án tiêu biểu</h2>
+        <div class="project">
+          <div class="meta"><strong>Đồ án Website E-commerce</strong> — Thành viên nhóm (5 người)</div>
+          <div> <em>Công nghệ:</em> Laravel, HTML, CSS, JavaScript, ReactJS</div>
+          <ul>
+            <li>Xây dựng giao diện xem sản phẩm, đăng nhập và chức năng thanh toán cơ bản.</li>
+            <li>Đảm nhiệm phần giao diện, tối ưu bố cục, tập trung vào UI/UX.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="meta"><strong>Các template giao diện nhỏ</strong></div>
+          <div> <em>Công nghệ:</em> HTML, CSS, JavaScript</div>
+          <ul>
+            <li>Thiết kế portfolio, landing page để rèn luyện bố cục và hiệu ứng.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ngôn ngữ & Sở thích</h2>
+      <p><strong>Ngôn ngữ:</strong> Tiếng Việt (Bản ngữ), Tiếng Anh (B1)</p>
+      <p><strong>Sở thích:</strong> Đọc sách công nghệ, viết lách, luyện thuật toán, du lịch.</p>
+    </div>
+
+    <footer>CV được tạo tự động — Nguyễn Hồng Thại • Frontend Developer</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CV - Nguyen Hong Thai</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --primary:#0b74de;
+      --muted:#6b7280;
+      --accent:#eef6ff;
+      --radius:12px;
+      --maxw:800px;
+      --pad:22px;
+      --heading-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --body-font: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{font-family:var(--body-font);background:var(--bg);margin:0;padding:40px;display:flex;justify-content:center}
+    .card{width:100%;max-width:var(--maxw);background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(11,20,40,0.08);overflow:hidden}
+    .header{display:flex;gap:20px;padding:var(--pad);align-items:center;background:linear-gradient(90deg, rgba(11,116,222,0.06), rgba(11,116,222,0.02));}
+    .avatar{width:96px;height:126px;border-radius:12px;background:linear-gradient(180deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-weight:700;color:#08306b}
+    .name{flex:1}
+    .name h1{margin:0;font-size:20px;color:#07173a;font-family:var(--heading-font)}
+    .name p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .contact{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;text-align:right}
+    .section{padding:22px;border-top:1px solid #f1f5f9}
+    .section h2{margin:0 0 10px;font-size:15px;color:#07173a}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--accent);padding:8px 10px;border-radius:999px;font-size:13px;color:#044e9a}
+    .project{margin-bottom:12px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    ul{margin:6px 0 0;padding-left:18px;color:#334155}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media(max-width:720px){.two-col{grid-template-columns:1fr}.contact{text-align:left}}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:#eef2ff;color:#3730a3;font-weight:600;font-size:13px}
+    footer{padding:16px;background:#fafafa;border-top:1px solid #f1f5f9;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="card" role="article" aria-label="CV Nguyen Hong Thai">
+    <div class="header">
+      <div >
+        <img class="avatar" src="avatar.png" alt="">
+      </div>
+      <div class="name">
+        <h1>Nguyen Hong Thai</h1>
+        <p>Frontend Developer (First-year student)</p>
+      </div>
+      <div class="contact">
+        <div><strong>Email:</strong> thai2bake@20157@gmail.com</div>
+        <div><strong>Phone:</strong> 0985 534 542</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Profile</h2>
+      <p>First-year student passionate about web development, especially ReactJS. I enjoy building user-friendly and intuitive interfaces, and continuously learn new technologies to improve Frontend skills and grow toward a professional developer career.</p>
+    </div>
+
+    <div class="section two-col">
+      <div>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">ReactJS</span>
+          <span class="chip">Laravel</span>
+          <span class="chip">Git</span>
+        </div>
+
+        <h2 style="margin-top:16px">Education</h2>
+        <div class="meta">Aptech Programming Center — Information Technology</div>
+        <div class="meta">GPA / Score: 84/100 (Semester 1)</div>
+      </div>
+
+      <div>
+        <h2>Projects</h2>
+        <div class="project">
+          <div class="meta"><strong>E-commerce Website (Capstone)</strong> — Team member (5 people)</div>
+          <div> <em>Technologies:</em> Laravel, HTML, CSS, JavaScript, ReactJS</div>
+          <ul>
+            <li>Developed product viewing, user login and basic checkout flows.</li>
+            <li>Responsible for the UI part: layout, responsive and UX-focused design.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="meta"><strong>Small UI Templates</strong></div>
+          <div> <em>Technologies:</em> HTML, CSS, JavaScript</div>
+          <ul>
+            <li>Built portfolio and landing page templates to practice layout and CSS/JS effects.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Languages & Interests</h2>
+      <p><strong>Languages:</strong> Vietnamese (Native), English (B1)</p>
+      <p><strong>Interests:</strong> Reading tech books, writing, solving algorithm exercises, traveling.</p>
+    </div>
+
+    <footer>CV generated — Nguyen Hong Thai • Frontend Developer</footer>
+  </div>
+</body>
+</html>
